@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>COP3530 MOVIE MATCHER</title>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<header class="navbar">
+			<div>
+				<h1 class="logo">🎥 DSA Project 2 🎬</h1>
+			</div>
+		</header>
+
+		<!-- Front Page -->
+		<section id="front-page">
+			<h1 class="title">MOVIE <span style="color: #f0a500; -webkit-text-stroke: 1px #374b84">MATCHER</span></h1>
+
+			<!-- User Inputs -->
+			<div class="input-containers"></div>
+
+			<!-- Genres Dropdown Menu -->
+			<div class="genre">
+				<h2>Select Genre:</h2>
+				<div id="checkboxes">
+					<label><input type="checkbox" value="28" />Action</label>
+					<label><input type="checkbox" value="12" />Adventure</label>
+					<label><input type="checkbox" value="16" />Animation</label>
+					<label><input type="checkbox" value="35" />Comedy</label>
+					<label><input type="checkbox" value="80" />Crime</label>
+					<label><input type="checkbox" value="99" />Documentary</label>
+					<label><input type="checkbox" value="18" />Drama</label>
+					<label><input type="checkbox" value="10751" />Family</label>
+					<label><input type="checkbox" value="14" />Fantasy</label>
+					<label><input type="checkbox" value="36" />History</label>
+					<label><input type="checkbox" value="27" />Horror</label>
+					<label><input type="checkbox" value="10402" />Music</label>
+					<label><input type="checkbox" value="9648" />Mystery</label>
+					<label><input type="checkbox" value="10749" />Romance</label>
+					<label><input type="checkbox" value="878" />Science Fiction</label>
+					<label><input type="checkbox" value="10770" />Thriller</label>
+					<label><input type="checkbox" value="53" />TV Movie</label>
+					<label><input type="checkbox" value="10752" />War</label>
+					<label><input type="checkbox" value="37" />Western</label>
+				</div>
+			</div>
+
+			<!-- Sliders -->
+			<div class="sliders">
+				<!-- Release Year Slider -->
+				<div class="slide-container">
+					<h3>Release Year: <input id="year" type="number" min="1870" max="2026" value="1948" /></h3>
+					<input type="range" min="1870" max="2026" value="1948" class="slider" id="release-year" />
+				</div>
+
+				<!-- Popularity Slider -->
+				<div class="slide-container">
+					<h3>Popularity Score: <input id="popularity" type="number" min="0" max="500" value="250" /></h3>
+					<input type="range" min="0" max="500" value="250" step="0.01" class="slider" id="popularity-score" />
+				</div>
+
+				<!-- User Rating Slider -->
+				<div class="slide-container">
+					<h3>User Rating: <input id="rating" type="number" min="0" max="10" value="5" /></h3>
+					<input type="range" min="0" max="10" value="5" step="0.01" class="slider" id="user-rating" />
+				</div>
+
+				<!-- Number of Votes Slider -->
+				<div class="slide-container">
+					<h3>User Vote Count: <input id="votes" type="number" min="0" max="40000" value="20000" /></h3>
+					<input type="range" min="0" max="40000" value="20000" class="slider" id="user-votes" />
+				</div>
+			</div>
+			<!-- Submit Button -->
+			<button id="submitBtn">Find Movies</button>
+		</section>
+
+		<!-- Result Screen -->
+		<section id="results-page" class="hidden">
+			<img src="images/result_page.png" />
+
+			<h1 class="title">SORT COMPARISON</h1>
+			<div class="sort-results">
+				<div class="sort-result">
+					<h2>Merge Sort Time:</h2>
+					<p id="mergeSortTime">0 ms</p>
+				</div>
+				<div class="sort-result">
+					<h2>Heap Sort Time:</h2>
+					<p id="heapSortTime">0 ms</p>
+				</div>
+			</div>
+
+			<h1 class="title">YOUR MATCHES</h1>
+			<div class="results-container" id="resultsContainer"></div>
+
+			<button id="backBtn">Back</button>
+			<div class="page-nav">
+				<button id="prevBtn">Previous</button>
+				<span id="pageIndicator">Page 1 / 1</span>
+				<button id="nextBtn">Next</button>
+			</div>
+		</section>
+
+		<div class="loading-screen hidden">
+			<div class="spinner"></div>
+		</div>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
