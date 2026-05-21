@@ -1,6 +1,3 @@
-//
-// Created by Sanaa Chetal on 3/19/26.
-//
 #include "merge_sort.h"
 using namespace std;
 

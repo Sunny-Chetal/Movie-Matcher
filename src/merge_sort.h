@@ -1,6 +1,3 @@
-//
-// Created by Sanaa Chetal on 3/22/26.
-//
 #pragma once
 #include <vector>
 #include "Movie.h"

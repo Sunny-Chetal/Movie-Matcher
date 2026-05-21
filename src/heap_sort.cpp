@@ -1,6 +1,3 @@
-//
-// Created by Jessica Dippolito on 3/24/26.
-//
 #include "heap_sort.h"
 #include <iostream>
 #include <ostream>
