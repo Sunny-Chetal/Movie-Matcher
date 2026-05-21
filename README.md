@@ -14,7 +14,7 @@ A C++ web application that recommends movies based on your preferences using a w
 ### Input Screen
 ---
 
-**Genre selection** — a checkbox grid lets you pick one or more genres (e.g. Action, Comedy, Horror). You can mix genres freely; the similarity algorithm uses Jaccard overlap, so a movie that matches two of your three selected genres will still score higher than one that matches none.
+**Genre selection** — a checkbox grid lets you pick one or more genres (e.g. Action, Comedy, Horror). You can mix genres freely, so a movie that matches two of your three selected genres will still score higher than one that matches none.
 
 **Preference sliders** — four sliders let you dial in exactly the kind of movie you want:
 
